@@ -7,7 +7,7 @@ const path = require('path');
 const userRoutes = require('./server/routes/user');
 const postsRoutes = require('./server/routes/post');
 
-mongoose.connect(process.env.dbURL)
+mongoose.connect( "mongodb+srv://brettnguyen7:<password>@cluster0.k5ole7s.mongodb.net/?retryWrites=true&w=majority")
   .then(console.log("DB Connected!!"))
   .catch(error => console.log(error));
 
