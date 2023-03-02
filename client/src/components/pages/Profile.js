@@ -20,9 +20,9 @@ const Profile = () => {
  
   const [posts, setPosts] = useState([]);
   //https://a-comment.herokuapp.com
-  
+  //https://a-comment.herokuapp.com/post/showPosts
   useEffect(() => {
-      fetch("https://a-comment.herokuapp.com/post/showPosts", )
+      fetch("http://localhost:5050/post/showPosts", )
       .then((response) => {
         return response.json();
       })
