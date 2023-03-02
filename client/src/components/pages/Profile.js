@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Logo from "./usericon.svg";
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import { getCurrentUser } from "../../main.js";

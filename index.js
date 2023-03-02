@@ -7,7 +7,7 @@ const path = require('path');
 const userRoutes = require('./server/routes/user');
 const postsRoutes = require('./server/routes/post');
 
-mongoose.connect( "mongodb+srv://brettnguyen7:<password>@cluster0.k5ole7s.mongodb.net/?retryWrites=true&w=majority")
+mongoose.connect(process.env.dbURL)
   .then(console.log("DB Connected!!"))
   .catch(error => console.log(error));
 
@@ -28,6 +28,6 @@ app.use(function(req, res, next) {
 app.use('/user', userRoutes);
 app.use('/post', postsRoutes);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5050;
 
 app.listen(PORT, () =>  console.log(`Server started on port ${PORT}!`));
