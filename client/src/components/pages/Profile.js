@@ -19,10 +19,10 @@ const Profile = () => {
   const { user } = useContext(UserContext);
  
   const [posts, setPosts] = useState([]);
-  //https://a-comment.herokuapp.com
-  //https://a-comment.herokuapp.com/post/showPosts
+  //http://localhost:5050/post/showPosts
+  //https://https://react-notes.herokuapp.com/post/showPosts"
   useEffect(() => {
-      fetch("http://localhost:5050/post/showPosts", )
+      fetch("https://react-notes.herokuapp.com/post/showPosts", )
       .then((response) => {
         return response.json();
       })

@@ -1,9 +1,10 @@
 //    http://localhost:5000/user/register
 //    {"username": "cathy123", "password": "icecream"}
 //    "POST"
+//     http://localhost:5050
 export async function fetchData(route='', data={}, methodType) {
     //sending over our data to specified route in server
-    const response = await fetch(`http://localhost:5050${route}`, {
+    const response = await fetch(`${route}`, {
       method: methodType,
       headers: {
         'Content-Type': 'application/json'
