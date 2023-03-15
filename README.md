@@ -1,6 +1,6 @@
 
 **<h1>ReactJs Notes web app :</h1>**
-A simple CRUD notes web app uses React as the front end and MongoDB for the backend database. Future features will include being able to comment on other users notes
+A simple CRUD notes web app that uses React as the front end with node.js and express.js as the backend with MongoDB for the database. Future features will include being able to comment on other users notes
 
 
 **<h1>ERD:</h1>**
